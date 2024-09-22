@@ -5,16 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
-
-
-
-
+    9
     <TextView
         android:id="@+id/textViewCalc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/calulator"
+        android:text="@string/calculator"
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -57,32 +55,31 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/operandTwo" />
 
     <Button
         android:id="@+id/subtractButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:text="@string/subtract"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/addButton" />
+        app:layout_constraintLeft_toRightOf="@id/addButton"
+        app:layout_constraintTop_toBottomOf="@id/operandTwo" />
 
     <Button
         android:id="@+id/multiplyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         android:text="@string/multiply"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subtractButton" />
+        app:layout_constraintLeft_toRightOf="@id/subtractButton"
+        app:layout_constraintTop_toBottomOf="@id/operandTwo" />
 
     <Button
         android:id="@+id/divisionButton"
@@ -91,10 +88,8 @@
         android:layout_marginTop="30dp"
         android:text="@string/divide"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/multiplyButton" />
-
+        app:layout_constraintLeft_toRightOf="@id/multiplyButton"
+        app:layout_constraintTop_toBottomOf="@id/operandTwo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

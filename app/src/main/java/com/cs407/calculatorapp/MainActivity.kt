@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             val num1 = operandOne.text.toString().toInt()
             val num2 = operandTwo.text.toString().toInt()
             var result = num1 + num2
-            intent.putExtra("EXTRA_MESSAGE", result.toString())
+            intent.putExtra("EXTRA_MESSAGE", "Result: " + result.toString())
             startActivity(intent)
 
         }
@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
             val num1 = operandOne.text.toString().toInt()
             val num2 = operandTwo.text.toString().toInt()
             val result = num1 - num2
-            intent.putExtra("EXTRA_MESSAGE", result.toString())
+            intent.putExtra("EXTRA_MESSAGE", "Result: " + result.toString())
             startActivity(intent)
         }
 
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             val num1 = operandOne.text.toString().toInt()
             val num2 = operandTwo.text.toString().toInt()
             val result = num1 * num2
-            intent.putExtra("EXTRA_MESSAGE", result.toString())
+            intent.putExtra("EXTRA_MESSAGE","Result: " + result.toString())
             startActivity(intent)
         }
 
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
             }
             else{
                 val result = num1.toDouble() / num2
-                intent.putExtra("EXTRA_MESSAGE", result.toString())
+                intent.putExtra("EXTRA_MESSAGE", "Result: " + result.toString())
             }
             startActivity(intent)
         }
